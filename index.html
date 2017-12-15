@@ -2,12 +2,23 @@
 <html>
 <head>
 	<title>Archer Malmo | Field Trip</title>
+	<link rel="stylesheet" href="aos/dist/aos.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<meta charset="utf-8">
 	<style type="text/css">
 		*{font-family: Arial;}
+		.archerDiv {
+			padding-top: 20%;
+			padding-bottom: 15.4%;
+		}
+
+		.marginal {
+			padding: 2%;
+		}
+
 		.archerLogo {
-			width: 50%;
-			height: 50%;
+			width: 75%;
+			height: 75%;
 		}
 
 		.link {
@@ -38,33 +49,110 @@
 			width: 100%;
 			height: 100%;
 		}
+
+
+		/*
+		=============
+		Mouse Scroll
+		=============
+		*/
+		.scroll-downs {
+  			/*position: absolute;*/
+  			/*top: 0;
+  			right: 0;
+  			bottom: 0;
+  			left: 0;*/
+  			margin: auto;
+  			width :34px;
+ 			height: 55px;
+		}
+		.mousey {
+		  width: 3px;
+		  padding: 10px 15px;
+		  height: 35px;
+		  border: 2px solid #FF5C00;
+		  border-radius: 25px;
+		  opacity: 0.75;
+		  box-sizing: content-box;
+		}
+		.scroller {
+		  width: 3px;
+		  height: 10px;
+		  border-radius: 25%;
+		  background-color: #FF5C00;
+		  animation-name: scroll;
+		  animation-duration: 2.2s;
+		  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+		  animation-iteration-count: infinite;
+		}
+		@keyframes scroll {
+		  0% { opacity: 0; }
+		  10% { transform: translateY(0); opacity: 1; }
+		  100% { transform: translateY(15px); opacity: 0;}
+		}
 	</style>
 </head>
 <body>
-	<div align="center" class="header"><a target="_blank" href="http://archermalmo.com/"><img class="archerLogo" src="img/archer.png"></a>
+	<div data-aos="zoom-in-up" align="center" class="archerDiv">
+		<a target="_blank" href="http://archermalmo.com/"><img class="archerLogo" src="img/archer.png"></a>
+	</div>
+	<div class="scroll-downs">
+  		<div class="mousey">
+    		<div class="scroller"></div>
+  		</div>
+	</div>
+
+	<div class="marginal"></div>
+
+	<hr class="seperator">
+	<div align="center" id="fullpage">
 		<div class="paragraph">
-			<p>This is the account of my horrible <i>just kidding</i> day at <a class="link" target="_blank" href="http://archermalmo.com/">Archer Malmo</a>.<br> Before the trip even happened, I was already super excited. Waking up Friday was awesome. When I got to school, I didn't even want to do anything because I knew I was going on the field trip. I forgot to turn in my bellwork spiral the day before, so I took it to Mrs. Sinclair. I then went back to her about 20 minutes later to ask where we were going to meet up. She told me that we would take our backpacks to her room, and we would meet up in the main lobby.</p>
+			<br>
+			<div data-aos="zoom-in" class="section">
+				<p>This is the account of my horrible <i>just kidding</i> day at <a class="link" target="_blank" href="http://archermalmo.com/">Archer Malmo</a>.<br> Before the trip even happened, I was already super excited. Waking up Friday was awesome. When I got to school, I didn't even want to do anything because I knew I was going on the field trip. I forgot to turn in my bellwork spiral the day before, so I took it to Mrs. Sinclair. I then went back to her about 20 minutes later to ask where we were going to meet up. She told me that we would take our backpacks to her room, and we would meet up in the main lobby.</p>
+			</div>
 			<br>
 			<hr class="seperator">
 			<br>
-			<p>Once we got on the bus, Mrs. Sinclair sat up front where we told her it was more dangerous because if were to wreck, then she would go flying through the front windshield. I was in the back of the bus, so it took a long time to get off the bus. Once we got off, we had to walk a little to get to the Cotton Exchange Building. When we got inside, we had to wait about 5 minutes for Ben to come get us. Their elevators aren't that big so we had to go up in groups.</p>
+			<div data-aos="zoom-in-up" class="section">	
+				<p>Once we got on the bus, Mrs. Sinclair sat up front where we told her it was more dangerous because if were to wreck, then she would go flying through the front windshield. I was in the back of the bus, so it took a long time to get off the bus. Once we got off, we had to walk a little to get to the Cotton Exchange Building. When we got inside, we had to wait about 5 minutes for Ben to come get us. Their elevators aren't that big so we had to go up in groups.</p>
+			</div>
 			<br>
 			<hr class="seperator">
 			<br>
-			<p>When they started the presentation the majority of the group had to sit on the floor, including Mrs. Sinclair, and Mrs. Wetzel. Martin sat on the couch, and I doubt he even listened to anything that they guys said. I stood up for the majority of the presentation, but my stomach started to hurt, so I sat down. I learned a lot during the presentation. Take a look at the cool presentation that Ben and his co-workers put together below.</p> <img class="image" src="img/ft-1-1024x768.jpg">
+			<div data-aos="zoom-in-down" class="section">
+				<p>When they started the presentation the majority of the group had to sit on the floor, including Mrs. Sinclair, and Mrs. Wetzel. Martin sat on the couch, and I doubt he even listened to anything that they guys said. I stood up for the majority of the presentation, but my stomach started to hurt, so I sat down. I learned a lot during the presentation. Take a look at the cool presentation that Ben and his co-workers put together below.</p> <img class="image" src="img/ft-1-1024x768.jpg">
+			</div>
 			<br>
 			<hr class="seperator">
 			<br>
-			<p>Once the presentation was over, we took a group photo, and as you can see below, Mrs. Sinclair was attempting to do the stanky legg. She even matched with Mrs. Wetzel's daughter Audrey <i>they didn't plan it as I was told, but I think they totally planned it :)</i>.</p><img class="image" src="img/ft-2-1024x768.jpg">
+			<div data-aos="zoom-in-left" class="section">
+				<p>Once the presentation was over, we took a group photo, and as you can see below, Mrs. Sinclair was attempting to do the stanky legg. She even matched with Mrs. Wetzel's daughter Audrey <i>they didn't plan it as I was told, but I think they totally planned it :)</i>.</p><img class="image" src="img/ft-2-1024x768.jpg">
+			</div>
 			<br>
 			<hr class="seperator">
 			<br>
-			<p>After we left, we went to The Cookout. When we walked in, their line went from like 5 people to about 50 people. So, as you could imagine, they were stressed. When it was time for me to order, I joked with the girl and said "I want everything on the menu, just kidding." That made her laugh, which was my goal. I asked for a burger with a chocolate shake. The guy that was handing out drinks sat a coke down in front of me, so I asked the girl if it was my shake, and she said "No, I don't know why he made that for you, but take it anyways." So, I am glad that I walked away from the field trip with a free drink <i>in which I also got a free refill.</i></p>
+			<div data-aos="zoom-in-right" class="section">
+				<p>After we left, we went to The Cookout. When we walked in, their line went from like 5 people to about 50 people. So, as you could imagine, they were stressed. When it was time for me to order, I joked with the girl and said "I want everything on the menu, just kidding." That made her laugh, which was my goal. I asked for a burger with a chocolate shake. The guy that was handing out drinks sat a coke down in front of me, so I asked the girl if it was my shake, and she said "No, I don't know why he made that for you, but take it anyways." So, I am glad that I walked away from the field trip with a free drink <i>in which I also got a free refill.</i></p>
+			</div>
+			<br>
+			<hr class="seperator">
+			<br>
+			<div data-aos="zoom-out" class="section">
+				<p>When we got back to the school, we went to Mrs. Sinclairs room, to get our bags. She has this small room inside of her classroom that is like a closet, it was locked, so I used my sunlasses to pick the lock, and get us in there so we could get our bags <i>it was fun</i>.</p>
+			</div>
 			<br>
 			<hr class="seperator">
 			<br>
 			<footer>This website was made by Chad Lyell in 2017. Deal with it, it's awesome, and you love it. I do not own the Archer Malmo logo though. :)</footer>
 		</div>
 	</div>
+	<script type="text/javascript" src="aos/dist/aos.js"></script>
+	<script type="text/javascript">
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 2000
+			});
+		</script>
 </body>
 </html>
